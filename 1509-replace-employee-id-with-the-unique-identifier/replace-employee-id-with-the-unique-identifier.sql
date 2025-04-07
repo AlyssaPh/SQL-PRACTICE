@@ -1,10 +1,5 @@
-# Write your MySQL query statement below
-SELECT 
-    COALESCE(eu.unique_id, NULL) AS unique_id,
-    e.name
-FROM 
-    Employees e
-LEFT JOIN 
-    EmployeeUNI eu
-ON 
-    e.id = eu.id;
+/* Write your T-SQL query statement below */
+select u.unique_id, e.name
+from employees as e
+left join  employeeUNI as u
+on u.id = e.id;
